@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GTA+ Style Homepage</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .fade-in-page {
+            opacity: 0;
+            animation: fadeInPage 1s ease forwards;
+        }
+
+
+        @keyframes fadeInPage {
+            0% {
+                opacity: 0;
+                background: black;
+            }
+
+            50% {
+                opacity: 0.3;
+                background: black;
+            }
+
+            100% {
+                opacity: 1;
+                background: #0f0f0f;
+            }
+        }
+
+
+        .bg-video {
+            position:fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        
+        nav {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 13px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            opacity: 0.9;
+
+        }
+
+        nav a:hover {
+            opacity: 1;
+            box-shadow: white 10px 20px 100px;
+
+        }
+
+
+
+        .logo {
+            color: yellow;
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+            padding-bottom: 120px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 22px;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            padding: 12px 45px;
+            background: rgb(226, 155, 0);
+            color: black;
+            font-weight: 700;
+            cursor: pointer;
+            border: none;
+            border-radius: 3px;
+            transition: 0.3s;
+            box-shadow: rgb(53, 29, 0) 10px 20px 90px;
+        }
+
+        .btn:hover {
+            background: orange;
+        }
+
+
+        .features {
+            display: flex;
+            justify-content: center;
+            gap: 70px;
+            width: 100%;
+            margin-top: 30px;
+        }
+
+        .feature {
+            width: 170px;
+            height: 80px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(255, 200, 0, 0.3);
+            backdrop-filter: blur(2px);
+            font-size: 12px;
+            box-shadow: black 20px 40px 60px;
+             transition: 0.3s;
+        }
+
+        div.feature:hover{
+            background: orange;
+            color: #0f0f0f;
+            
+        }
+
+        .AVAILABLE ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+            padding-left: 10px;
+        }
+
+        .perks {
+            color: #e0e0e0;
+            text-shadow: rgb(255, 255, 255) 10px 30px 50px;
+            font-weight: 1;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1.perks:hover {
+            opacity: 1;
+            transform: scale(1.05);
+            transition: 0.3s;
+
+        }
+
+        .perks {
+            transform: scale(1);
+            transition: 0.3s;
+
+        }
+
+        .gtaON {
+            padding-left: 100px;
+            padding-bottom: 50px;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+<body class="fade-in-page">
+     <a href="hometest.html"><img src="rockstarlogo.png" width="100px"></a>
+
+    <video class="bg-video" autoplay muted loop>
+        <source src="bar3.mp4" type="video/mp4">
+    </video>
+
+    <nav>
+            <a href="hometest.html">Home</a>
+            <a href="gamestore.html">Game library</a>
+            <a href="gta+.html">GTA+</a>
+            <a href="Support.html">Support</a>
+        </nav>
+
+    <section class="hero">
+        <h1>The Premium Membership for GTA Online Players</h1>
+        <button class="btn">JOIN NOW</button><br><br><br><br>
+        <div>
+            <h1 class="perks">- benefits -</h1>
+        </div>
+        <div class="features">
+            <div class="feature">GTA$ delivered to bank</div>
+            <div class="feature">Special menu benefits</div>
+            <div class="feature">Exclusive monthly items</div>
+            <div class="feature">Enhanced RP & GTA$ perks</div>
+            <div class="feature">Access to bonus content</div>
+        </div><br><br><br>
+    </section>
+
+    <section>
+        <div class="gtaON">
+            <ul>
+                <img src="ui.jpg" width="50%"><br><br>
+
+                <li style="color: #e0e0e0;">Special Offer
+                    Get 40% Bonus GTA$ on Qualifying Shark Cards
+                    Sign in to the Rockstar Games account linked to your GTA Online character and claim this offer by
+                    December 7, 2025.
+                    Terms Apply*. See below for details.</li><br>
+
+                <li style="color: #e0e0e0;">Personalize Your Plates
+                    Favorite ride missing something? Create your own personalized license plates and fit them at LS
+                    Customs.</li><br>
+                <li style="color: #e0e0e0;">Get started in GTA Online with the tools of the trade. Quickly choose from
+                    one of four businesses — Biker, Executive, Nightclub Owner, or Gunrunner — and select from
+                    properties, powerhouse vehicles, and weaponry to kick-start your enterprise.</li>
+
+            </ul>
+        </div>
+    </section>
+</body>
+
+</html>

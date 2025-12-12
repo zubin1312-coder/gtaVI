@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Theft Auto V - Rockstar Support</title>
+    <style>
+        body {
+            margin: 0;
+            background: #0d0d0d;
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .fade-in-page {
+            opacity: 0;
+            animation: fadeInPage 1s ease forwards;
+        }
+
+        @keyframes fadeInPage {
+            0% {
+                opacity: 0;
+                background: black;
+            }
+
+            50% {
+                opacity: 0.3;
+                background: black;
+            }
+
+            100% {
+                opacity: 1;
+                background: #0f0f0f;
+            }
+        }
+
+
+        header {
+            padding: 25px 40px;
+            font-size: 14px;
+        }
+
+
+        nav {
+            width: 100%;
+            padding-top: 20px;
+            margin-right: ;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 13px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            opacity: 0.9;
+
+        }
+
+        nav a:hover {
+            opacity: 1;
+            box-shadow: white 10px 20px 100px;
+
+        }
+
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .game-section {
+            margin-top: 40px;
+        }
+
+        .cover img {
+            width: 250px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            font-size: 32px;
+            margin-top: 15px;
+            font-weight: 600;
+        }
+
+        .buttons {
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            background: #1b1b1b;
+            border: 1px solid #444;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #333;
+            transform: translateY(-2px);
+        }
+
+        .browse-title {
+            margin-top: 50px;
+            font-size: 26px;
+            font-weight: 600;
+            color: #fa9e00;
+        }
+
+        .articles {
+            margin-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border: 1px solid #333;
+            padding: 18px;
+            width: 300px;
+            border-radius: 10px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #666;
+        }
+
+        .card h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .card p {
+            font-size: 13px;
+            margin-top: 8px;
+            color: #ccc;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-left: 620px;
+            font-size: 14px;
+            color: #888;
+        }
+
+        .bg-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.4;
+        }
+
+        .logo-icon:hover {
+            transform: translateY(-4px);
+            border-color: #666;
+        }
+
+        .logo-icon {
+            padding: 18px;
+            border-radius: 10px;
+            text-align: left;
+            transition: 0.3s;
+        }
+
+        .gt5 {
+            color: #ffa200;
+        }
+
+        .rocksup {
+            opacity: 0.3;
+            font-size: larger;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            font-weight: 600;
+            padding-left: 1400px;
+        }
+
+        .gts {
+            display: flex;
+            padding-left: 730px;
+            transition: 0.3s;
+        }
+
+        .gts:hover {
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="fade-in-page">
+    <img class="bg-video" src="back.png" width="100%">
+    <a href="hometest.html"><img src="rockstarlogo.png" width="100px"></a>
+
+    <nav>
+        <a href="hometest.html">Home</a>
+        <a href="gamestore.html">Game library</a>
+        <a href="gta+.html">GTA+</a>
+        <a href="Support.html">Support</a>
+    </nav>
+    <header class="rocksup">R* support</header>
+    <div class="container">
+
+        <div class="game-section">
+            <div class="cover">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V Cover">
+            </div>
+            <h1 class="gt5">Grand Theft Auto V</h1>
+
+            <div class="buttons">
+                <div class="btn">Network Troubleshooter</div>
+                <div class="btn">Account Linking</div>
+                <div class="btn">Change Account Details</div>
+            </div>
+        </div>
+
+        <div class="browse-title">Browse Articles</div>
+
+        <div class="articles">
+
+            <div class="card">
+                <h3>GTA V PC System Requirements</h3>
+                <p>Minimum and recommended specs for running GTA V from Rockstar Games Launcher.</p>
+            </div>
+
+            <div class="card">
+                <h3>Error Code 1000.7</h3>
+                <p>Learn how to resolve connectivity issues with Rockstar Launcher.</p>
+            </div>
+
+            <div class="card">
+                <h3>Incorrect Verification Code</h3>
+                <p>Why you may not receive authentication emails and how to fix it.</p>
+            </div>
+
+        </div>
+    </div>
+    <footer><b>Still need help?</b> We're available to assist you 24/7.</footer><br><br>
+    <a href="gta+.html"><img class="gts" src="GTA+.png" width="100px"></a>
+    <br><br><br>
+</body>
+
+</html>

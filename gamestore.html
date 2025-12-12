@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rockstar Game Library</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+            background-color: black;
+        }
+
+        .fade-in-page {
+            opacity: 0;
+            animation: fadeInPage 1s ease forwards;
+        }
+
+
+        @keyframes fadeInPage {
+            0% {
+                opacity: 0;
+                background: black;
+            }
+
+            50% {
+                opacity: 0.3;
+                background: black;
+            }
+
+            100% {
+                opacity: 1;
+                background: #0f0f0f;
+            }
+        }
+
+
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        .bg-img {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: -1;
+            opacity: 0.3;
+        }
+           nav {
+            width: 100%;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            font-size: 13px;
+            position: fixed;
+            top: 0;
+            z-index: 10;
+            letter-spacing: 1px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+            opacity: 0.9;
+            
+        }
+
+        nav a:hover {
+            opacity: 1;
+            box-shadow: white 10px 20px 70px;
+             
+        }
+
+        .container {
+            padding: 25px 50px;
+        }
+
+
+        li.home:hover {
+            opacity: 0.8;
+            transition: all 0.4s ease-in-out;
+        }
+
+        li.char:hover {
+            opacity: 0.8;
+            transition: all 0.4s ease-in-out;
+        }
+
+        li.about:hover {
+            opacity: 0.8;
+            transition: all 0.4s ease-in-out;
+        }
+
+        li.wallpapers:hover {
+            opacity: 0.8;
+            transition: all 0.4s ease-in-out;
+        }
+
+        .container h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .games-grid {
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .games-grid2 {
+            display: flex;
+            grid-template-columns: repeat(5, 1fr);
+        }
+
+        .card {
+            padding-left: 100px;
+            overflow: hidden;
+            text-align: center;
+            transition: 0.3s;
+            margin: auto;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            font-size: 16px;
+        }
+
+        .price {
+            font-size: 15px;
+            font-weight: bold;
+            padding-bottom: 15px;
+            color: #444;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding: 30px;
+            background: #111;
+            color: white;
+            text-align: center;
+            font-size: 15px;
+        }
+
+        #logo {
+            width: 120px;
+            height: auto;
+        }
+
+        .text-style1{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            opacity: 0.8;
+             transition: 0.3s;
+             color: #ffffff;
+        }
+
+        h3.text-style1:hover{
+            opacity: 1.0;
+            transform: scale(1.05);
+            color: #ea00ff;
+        }
+
+        .text-style2{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            opacity: 0.8;
+             transition: 0.3s;
+             color: #ffffff;
+        }
+         h3.text-style2:hover{
+            opacity: 1.0;
+            transform: scale(1.05);
+            color: #e3b500;
+        }
+        
+        .text-style3{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            opacity: 0.8;
+             transition: 0.3s;
+             color: #ffffff;
+        }
+        
+          h3.text-style3:hover{
+            opacity: 1.0;
+            transform: scale(1.05);
+            color: #00ffb3;
+        }
+           
+        .text-style4{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+            opacity: 0.8;
+             transition: 0.3s;
+             color: #ffffff;
+        }
+
+        h3.text-style4:hover{
+            opacity: 1.0;
+            transform: scale(1.05);
+            color: #ff0000;
+        }
+
+
+
+    </style>
+</head>
+
+<body class="fade-in-page">
+    <img src="uiback.jpeg" width="100%" class="bg-img">
+    
+    <nav>
+        <a href="hometest.html">Home</a>
+        <a href="gamestore.html">Game library</a>
+        <a href="gta+.html">GTA+</a>
+        <a href="Support.html">Support</a>
+    </nav><br>
+
+    <div class="container">
+        <h1 style="color: #ffffff;">All Games</h1><br>
+
+        <div class="games-grid">
+
+            <a href="buyGTA-6.html"><div class="card">
+                <video src="gta6.trailer2.mp4" autoplay muted loop width="500px" class="gta6"></video><br><br>
+                <h3 class="text-style1">Grand Theft Auto VI</h3><br>
+                <p class="price" style="color: rgb(181, 181, 181);">₹ 4,999</p>
+            </div>
+
+           <a href="purchase-game.html"><div class="card">
+                <video src="gta5.trailer.mp4" autoplay muted loop width="500px" class="gta5"></video><br><br>
+                <h3 class="text-style2">Grand Theft Auto V</h3><br>
+                <p class="price" style="color: rgb(185, 185, 185);">₹ 1,499</p>
+            </div>
+        </div><br>
+        <div class="games-grid2">
+
+           <a href="trilogybuy.html"><div class="card">
+                <video src="gtatri.mp4" autoplay muted loop width="500px" class="gtaSA"></video><br><br>
+                <h3 class="text-style3">Grand Theft Auto Trilogy</h3><br>
+                <p class="price" style="color: rgb(165, 165, 165);">₹ 1,699</p>
+            </div>
+
+           <a href="legacy.html"><div class="card">
+                <video src="rdr2.mp4" autoplay muted loop width="500px" class="rdr2"></video><br><br>
+                <h3 class="text-style4">Red Dead Redemption 2</h3><br>
+                <p class="price" style="color: rgb(190, 190, 190)">₹ 2,499</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        © 2025 Rockstar Game Library - Placement bhediya
+    </footer>
+
+</body>
+
+</html>
